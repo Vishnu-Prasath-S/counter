@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Wave Counter</h1>
+        <p id="counter">0</p>
+        <div class="buttons">
+            <button class="btn btn-decrement" onclick="decrement()">-</button>
+            <button class="btn btn-reset" onclick="reset()">Reset</button>
+            <button class="btn btn-increment" onclick="increment()">+</button>
+        </div>
+    </div>
+
+    <!-- Multi-Layered Waves -->
+    <div class="wave-container">
+        <svg class="wave wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <path fill="rgba(255,255,255,0.5)" d="M0,32L30,29.3C60,27,120,21,180,21.3C240,21,300,27,360,26.7C420,27,480,21,540,24C600,27,660,37,720,42.7C780,48,840,48,900,48C960,48,1020,48,1080,42.7C1140,37,1200,27,1260,26.7C1320,27,1380,37,1410,42.7L1440,48L1440,60L0,60Z"></path>
+        </svg>
+        <svg class="wave wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <path fill="rgba(255,255,255,0.3)" d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,42.7C840,32,960,32,1080,32C1200,32,1320,32,1440,32V60H0Z"></path>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
